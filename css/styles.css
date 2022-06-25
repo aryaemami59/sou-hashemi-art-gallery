@@ -1,3 +1,8 @@
+:root {
+  --dark-mode-color: linear-gradient(to right, #0f2027, #203a43, #0f2027);
+  --light-mode-color: linear-gradient(to right, #ece9e6, #ffffff, #ece9e6);
+}
+
 * {
   /* margin: 0;
   padding: 0; */
@@ -11,12 +16,29 @@ html {
 
 body {
   width: 100%;
-  height: 200%;
-  background: #0f2027;
-  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
-  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  height: 100%;
+  /* background: #0f2027; */
+  /* background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027); */
+  /* background: var(--dark-mode-color); */
+  background: var(--light-mode-color);
+  /* background: linear-gradient(
+    to right,
+    rgb(15, 32, 39),
+    rgb(32, 58, 67),
+    rgb(15, 32, 39)
+  ); */
+  /* background: linear-gradient(to right, #2c5364, #203a43, #0f2027); */
+  /* background: linear-gradient(to right, #ece9e6, #ffffff, #ece9e6); */
+  /* background: linear-gradient(to right, #e9e4f0, #e9e4f0); */
 }
 
+body.dark-mode {
+  background: var(--dark-mode-color);
+}
+
+/* body.light-mode {
+  background: var(--light-mode-color);
+} */
 .row-content {
   min-height: 200px;
 }

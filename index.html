@@ -26,8 +26,17 @@
     <title>Sou's Art Gallery</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top w-100">
+    <nav
+      class="navbar navbar-expand-sm navbar-light sticky-top w-100 shadow js-navbar"
+    >
       <div class="container">
+        <button
+          class="btn btn-lg btn-adn bg-transparent js-dark-mode border-0 text-dark"
+          title="Switch to Dark Mode"
+          data-bs-toggle="tooltip"
+        >
+          <i class="fas fa-solid fa-circle-half-stroke"></i>
+        </button>
         <a
           href="https://www.facebook.com/sou.hashemi.5"
           class="btn btn-social-icon btn-facebook mx-2"
@@ -134,7 +143,12 @@
                 aria-label="Slide 3"
               ></button>
             </div>
-            <div class="carousel-inner shadow" role="button">
+            <div
+              class="carousel-inner shadow-lg"
+              role="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
               <div class="carousel-item active">
                 <img
                   src="img/182050056_2951171045117214_3229832577583471950_n.jpg"
@@ -230,7 +244,12 @@
                 aria-label="Slide 3"
               ></button>
             </div>
-            <div class="carousel-inner shadow" role="button">
+            <div
+              class="carousel-inner shadow-lg"
+              role="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
               <div class="carousel-item active">
                 <img
                   src="img/182050056_2951171045117214_3229832577583471950_n.jpg"
@@ -296,6 +315,44 @@
               ></span>
               <span class="visually-hidden">Next</span>
             </button>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">
+                  Modal title
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">...</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Understood
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
