@@ -78,6 +78,9 @@
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -117,14 +120,14 @@
       <div class="row row-content">
         <div class="col-md-3 mx-auto">
           <div
-            id="carouselExampleCaptions"
+            id="firstCarousel"
             class="carousel slide"
             data-bs-ride="carousel"
           >
             <div class="carousel-indicators">
               <button
                 type="button"
-                data-bs-target="#carouselExampleCaptions"
+                data-bs-target="#firstCarousel"
                 data-bs-slide-to="0"
                 class="active"
                 aria-current="true"
@@ -132,13 +135,13 @@
               ></button>
               <button
                 type="button"
-                data-bs-target="#carouselExampleCaptions"
+                data-bs-target="#firstCarousel"
                 data-bs-slide-to="1"
                 aria-label="Slide 2"
               ></button>
               <button
                 type="button"
-                data-bs-target="#carouselExampleCaptions"
+                data-bs-target="#firstCarousel"
                 data-bs-slide-to="2"
                 aria-label="Slide 3"
               ></button>
@@ -147,7 +150,7 @@
               class="carousel-inner shadow-lg"
               role="button"
               data-bs-toggle="modal"
-              data-bs-target="#staticBackdrop"
+              data-bs-target="#imageModal"
             >
               <div class="carousel-item active">
                 <img
@@ -193,7 +196,7 @@
             <button
               class="carousel-control-prev"
               type="button"
-              data-bs-target="#carouselExampleCaptions"
+              data-bs-target="#firstCarousel"
               data-bs-slide="prev"
             >
               <span
@@ -205,7 +208,7 @@
             <button
               class="carousel-control-next"
               type="button"
-              data-bs-target="#carouselExampleCaptions"
+              data-bs-target="#firstCarousel"
               data-bs-slide="next"
             >
               <span
@@ -218,14 +221,14 @@
         </div>
         <div class="col-md-3 mx-auto">
           <div
-            id="carouselExampleCaptions"
+            id="secondCarousel"
             class="carousel slide"
             data-bs-ride="carousel"
           >
             <div class="carousel-indicators">
               <button
                 type="button"
-                data-bs-target="#carouselExampleCaptions"
+                data-bs-target="#secondCarousel"
                 data-bs-slide-to="0"
                 class="active"
                 aria-current="true"
@@ -233,13 +236,13 @@
               ></button>
               <button
                 type="button"
-                data-bs-target="#carouselExampleCaptions"
+                data-bs-target="#secondCarousel"
                 data-bs-slide-to="1"
                 aria-label="Slide 2"
               ></button>
               <button
                 type="button"
-                data-bs-target="#carouselExampleCaptions"
+                data-bs-target="#secondCarousel"
                 data-bs-slide-to="2"
                 aria-label="Slide 3"
               ></button>
@@ -248,7 +251,7 @@
               class="carousel-inner shadow-lg"
               role="button"
               data-bs-toggle="modal"
-              data-bs-target="#staticBackdrop"
+              data-bs-target="#imageModal"
             >
               <div class="carousel-item active">
                 <img
@@ -294,7 +297,7 @@
             <button
               class="carousel-control-prev"
               type="button"
-              data-bs-target="#carouselExampleCaptions"
+              data-bs-target="#secondCarousel"
               data-bs-slide="prev"
             >
               <span
@@ -306,7 +309,7 @@
             <button
               class="carousel-control-next"
               type="button"
-              data-bs-target="#carouselExampleCaptions"
+              data-bs-target="#secondCarousel"
               data-bs-slide="next"
             >
               <span
@@ -319,16 +322,16 @@
         </div>
         <div
           class="modal fade"
-          id="staticBackdrop"
-          data-bs-backdrop="static"
+          id="imageModal"
           data-bs-keyboard="false"
           tabindex="-1"
-          aria-labelledby="staticBackdropLabel"
+          aria-labelledby="imageModalLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
-              <div class="modal-header">
+              <img src="" alt="" class="d-block w-100" />
+              <!-- <div class="modal-header">
                 <h5 class="modal-title" id="staticBackdropLabel">
                   Modal title
                 </h5>
@@ -338,8 +341,8 @@
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
-              </div>
-              <div class="modal-body">...</div>
+              </div> -->
+              <!-- <div class="modal-body">...</div>
               <div class="modal-footer">
                 <button
                   type="button"
@@ -351,7 +354,7 @@
                 <button type="button" class="btn btn-primary">
                   Understood
                 </button>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>

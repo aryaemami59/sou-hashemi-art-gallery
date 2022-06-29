@@ -16,7 +16,7 @@
     />
     <link
       rel="stylesheet"
-      href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
     />
     <link
       rel="stylesheet"
@@ -26,9 +26,36 @@
     <title>Sou's Art Gallery</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav
+      class="navbar navbar-expand-sm navbar-light sticky-top w-100 shadow js-navbar"
+    >
       <div class="container">
-        <a class="navbar-brand" href="index.html">Sou Hashemi</a>
+        <button
+          class="btn btn-lg btn-adn bg-transparent js-dark-mode border-0 text-dark"
+          title="Switch to Dark Mode"
+          data-bs-toggle="tooltip"
+        >
+          <i class="fas fa-solid fa-circle-half-stroke"></i>
+        </button>
+        <a
+          href="https://www.facebook.com/sou.hashemi.5"
+          class="btn btn-social-icon btn-facebook mx-2"
+        >
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/hashemi1889"
+          class="btn btn-social-icon btn-instagram mx-2"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.twitter.com/hashemi1889"
+          class="btn btn-social-icon btn-twitter mx-2"
+        >
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a class="navbar-brand" href="#">Sou Hashemi</a>
         <button
           class="navbar-toggler d-lg-none"
           type="button"
@@ -43,13 +70,16 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav me-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">
+              <a class="nav-link" href="#">
                 Home
                 <span class="visually-hidden">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -66,8 +96,10 @@
                 class="dropdown-menu dropdown-menu-dark"
                 aria-labelledby="dropdownId"
               >
-                <a class="dropdown-item" href="#">Watercolor</a>
-                <a class="dropdown-item" href="#">Modern Art</a>
+                <a class="dropdown-item" href="#">Watercolor Paintings</a>
+                <a class="dropdown-item" href="#">
+                  Allegorical Rapidograph Art
+                </a>
               </div>
             </li>
           </ul>
