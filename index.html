@@ -26,6 +26,29 @@
     <title>Sou's Art Gallery</title>
   </head>
   <body>
+    <header class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-sm-3 col-md-2 align-self-center">
+            <!-- <img src="img/soap/7.jpg" class="img-fluid" /> -->
+            <h1 class="logo">Placeholder Logo</h1>
+          </div>
+          <!-- <div class="col">
+            <h1>NuCamp</h1>
+            <h2>a better way to camp</h2>
+          </div> -->
+          <!-- <div class="col-md-4 col-xl-2 mt-4">
+            <a
+              id="reserveButton"
+              role="button"
+              class="btn btn-lg btn-info text-nowrap"
+            >
+              Reserve Campsite
+            </a>
+          </div> -->
+        </div>
+      </div>
+    </header>
     <nav
       class="navbar navbar-expand-sm navbar-light sticky-top w-100 shadow js-navbar"
     >
@@ -122,7 +145,7 @@
       </div>
     </nav>
     <div class="container p-5">
-      <div class="row row-content">
+      <div class="row row-content m-3">
         <div class="col-md-3 mx-auto">
           <div
             id="firstCarousel"
@@ -157,9 +180,9 @@
               data-bs-toggle="modal"
               data-bs-target="#imageModal"
             >
-              <div class="carousel-item active">
+              <!-- <div class="carousel-item active">
                 <img
-                  src="img/allegorical/43915110_2278272428880656_5513379321801432140_n.jpg"
+                  src="img/allegorical/1.jpg"
                   class="d-flex m-auto"
                   alt="..."
                 />
@@ -172,7 +195,7 @@
               </div>
               <div class="carousel-item">
                 <img
-                  src="img/allegorical/188427945_336393931162549_3422545687412760665_n.jpg"
+                  src="img/allegorical/2.jpg"
                   class="d-flex m-auto"
                   alt="..."
                 />
@@ -186,7 +209,7 @@
               </div>
               <div class="carousel-item">
                 <img
-                  src="img/allegorical/219452100_284521840137397_2054797916425350471_n.jpg"
+                  src="img/allegorical/4.jpg"
                   class="d-flex m-auto"
                   alt="..."
                 />
@@ -196,7 +219,7 @@
                     Some representative placeholder content for the third slide.
                   </p>
                 </div>
-              </div>
+              </div> -->
             </div>
             <button
               class="carousel-control-prev"
@@ -224,105 +247,231 @@
             </button>
           </div>
         </div>
-        <div class="col-md-3 mx-auto">
-          <div
-            id="secondCarousel"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#secondCarousel"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#secondCarousel"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#secondCarousel"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
+        <div class="row row-content m-3">
+          <div class="col-md-3 mx-auto">
             <div
-              class="carousel-inner shadow-lg allegoircal-carousel-div"
-              role="button"
-              data-bs-toggle="modal"
-              data-bs-target="#imageModal"
+              id="secondCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
             >
-              <div class="carousel-item active">
-                <img
-                  src="img/watercolor/181156203_214642480119420_4039986440634469145_n.jpg"
-                  class="d-flex m-auto"
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>
-                    Some representative placeholder content for the first slide.
-                  </p>
-                </div>
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#secondCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#secondCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#secondCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
               </div>
-              <div class="carousel-item">
-                <img
-                  src="img/watercolor/181542673_791643461484158_4705096776688647868_n.jpg"
-                  class="d-flex m-auto"
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>
-                    Some representative placeholder content for the second
-                    slide.
-                  </p>
+              <div
+                class="carousel-inner shadow-lg allegoircal-carousel-div"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+              >
+                <!-- <div class="carousel-item active">
+                  <img
+                    src="img/watercolor/181156203_214642480119420_4039986440634469145_n.jpg"
+                    class="d-flex m-auto"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>
+                      Some representative placeholder content for the first slide.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="img/watercolor/182050056_2951171045117214_3229832577583471950_n.jpg"
-                  class="d-flex m-auto"
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>
-                    Some representative placeholder content for the third slide.
-                  </p>
+                <div class="carousel-item">
+                  <img
+                    src="img/watercolor/181542673_791643461484158_4705096776688647868_n.jpg"
+                    class="d-flex m-auto"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>
+                      Some representative placeholder content for the second
+                      slide.
+                    </p>
+                  </div>
                 </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/watercolor/182050056_2951171045117214_3229832577583471950_n.jpg"
+                    class="d-flex m-auto"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>
+                      Some representative placeholder content for the third slide.
+                    </p>
+                  </div>
+                </div> -->
               </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#secondCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#secondCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#secondCarousel"
-              data-bs-slide="prev"
+          </div>
+        </div>
+        <div class="row row-content m-3">
+          <div class="col-md-3 mx-auto">
+            <div
+              id="thirdCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
             >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#secondCarousel"
-              data-bs-slide="next"
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#thirdCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#thirdCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#thirdCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div
+                class="carousel-inner shadow-lg watercolor-carousel-div"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+              ></div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#secondCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#thirdCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row row-content m-3">
+          <div class="col-md-3 mx-auto">
+            <div
+              id="fourthCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
             >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#fourthCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#fourthCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#fourthCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div
+                class="carousel-inner shadow-lg watercolor-carousel-div"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+              ></div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#secondCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#fourthCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </div>
         <div
