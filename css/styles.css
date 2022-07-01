@@ -39,9 +39,9 @@ body.dark-mode {
 /* body.light-mode {
   background: var(--light-mode-color);
 } */
-.row-content {
+/* .row-content {
   min-height: 200px;
-}
+} */
 
 .carousel-inner img {
   transition: all 0.2s ease-in-out;
@@ -63,4 +63,30 @@ body.dark-mode {
 
 .logo.dark-mode {
   color: white;
+}
+
+.hover-transform {
+  transition: all 0.2s ease-in-out;
+}
+
+.hover-transform:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+
+.hover-transform-z {
+  transition: all 0.2s ease-in-out;
+}
+
+.hover-transform-z:hover {
+  transition: all 0.2s ease-in-out;
+  transform: translateZ(-10px) scale(1.05);
+}
+
+.opacity-hover:hover {
+  opacity: 0.6;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }

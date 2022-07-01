@@ -4,6 +4,8 @@ const carouselInner = [...document.querySelectorAll(".carousel-inner")];
 const modalContent = document.querySelector(".modal-content");
 const modalImage = modalContent?.querySelector("img");
 const logo = document.querySelector(".logo");
+const paragraphs = [...document.querySelectorAll(".lead")];
+const headings = [...document.querySelectorAll("h1")];
 const watercolorCarouselDiv = document.querySelector(
   ".watercolor-carousel-div"
 );
@@ -22,55 +24,61 @@ darkModeButton.addEventListener("click", () => {
   topNavBar.classList.toggle("navbar-light");
   topNavBar.classList.toggle("navbar-dark");
   logo.classList.toggle("dark-mode");
+  paragraphs.forEach(e => {
+    e.classList.toggle("text-white");
+  });
+  headings.forEach(e => {
+    e.classList.toggle("text-white");
+  });
 });
 
 // const r = new FileReader();
 // r.readAsText(blob);
-const imgArray = [];
-for (let i = 1; i < 4; i++) {
-  const img = new Image();
-  img.src = `img/allegorical/${i}.jpg`;
-  img.alt = `img/allegorical/${i}.jpg`;
-  img.classList.add("d-flex", "m-auto");
-  const carouselItem = document.createElement("div");
-  carouselItem.classList.add("carousel-item");
-  i === 1 && carouselItem.classList.add("active");
-  carouselItem.append(img);
-  carouselInner[0].append(carouselItem);
-}
+// const imgArray = [];
+// for (let i = 1; i < 4; i++) {
+//   const img = new Image();
+//   img.src = `img/allegorical/${i}.jpg`;
+//   img.alt = `img/allegorical/${i}.jpg`;
+//   img.classList.add("d-flex", "m-auto");
+//   const carouselItem = document.createElement("div");
+//   carouselItem.classList.add("carousel-item");
+//   i === 1 && carouselItem.classList.add("active");
+//   carouselItem.append(img);
+//   carouselInner[0].append(carouselItem);
+// }
 
-for (let i = 1; i < 4; i++) {
-  const img = new Image();
-  img.src = `img/soap/${i}.jpg`;
-  img.alt = `img/soap/${i}.jpg`;
-  img.classList.add("d-flex", "m-auto");
-  const carouselItem = document.createElement("div");
-  carouselItem.classList.add("carousel-item");
-  i === 1 && carouselItem.classList.add("active");
-  carouselItem.append(img);
-  carouselInner[1].append(carouselItem);
-}
+// for (let i = 1; i < 4; i++) {
+//   const img = new Image();
+//   img.src = `img/soap/${i}.jpg`;
+//   img.alt = `img/soap/${i}.jpg`;
+//   img.classList.add("d-flex", "m-auto");
+//   const carouselItem = document.createElement("div");
+//   carouselItem.classList.add("carousel-item");
+//   i === 1 && carouselItem.classList.add("active");
+//   carouselItem.append(img);
+//   carouselInner[1].append(carouselItem);
+// }
 
-for (let i = 1; i < 4; i++) {
-  const img = new Image();
-  img.src = `img/watercolor/${i}.jpg`;
-  img.alt = `img/watercolor/${i}.jpg`;
-  img.classList.add("d-flex", "m-auto");
-  const carouselItem = document.createElement("div");
-  carouselItem.classList.add("carousel-item");
-  i === 1 && carouselItem.classList.add("active");
-  carouselItem.append(img);
-  carouselInner[2].append(carouselItem);
-}
+// for (let i = 1; i < 4; i++) {
+//   const img = new Image();
+//   img.src = `img/watercolor/${i}.jpg`;
+//   img.alt = `img/watercolor/${i}.jpg`;
+//   img.classList.add("d-flex", "m-auto");
+//   const carouselItem = document.createElement("div");
+//   carouselItem.classList.add("carousel-item");
+//   i === 1 && carouselItem.classList.add("active");
+//   carouselItem.append(img);
+//   carouselInner[2].append(carouselItem);
+// }
 
-for (let i = 1; i < 4; i++) {
-  const img = new Image();
-  img.src = `img/pastel/${i}.jpg`;
-  img.alt = `img/pastel/${i}.jpg`;
-  img.classList.add("d-flex", "m-auto");
-  const carouselItem = document.createElement("div");
-  carouselItem.classList.add("carousel-item");
-  i === 1 && carouselItem.classList.add("active");
-  carouselItem.append(img);
-  carouselInner[3].append(carouselItem);
-}
+// for (let i = 1; i < 4; i++) {
+//   const img = new Image();
+//   img.src = `img/pastel/${i}.jpg`;
+//   img.alt = `img/pastel/${i}.jpg`;
+//   img.classList.add("d-flex", "m-auto");
+//   const carouselItem = document.createElement("div");
+//   carouselItem.classList.add("carousel-item");
+//   i === 1 && carouselItem.classList.add("active");
+//   carouselItem.append(img);
+//   carouselInner[3].append(carouselItem);
+// }
