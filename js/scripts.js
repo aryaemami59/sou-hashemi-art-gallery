@@ -3,7 +3,9 @@ const topNavBar = document.querySelector(".js-navbar");
 const modalContent = document.querySelector(".modal-content");
 const modalImage = modalContent?.querySelector("img");
 const logo = document.querySelector(".logo");
-const headings = [...document.querySelectorAll("h1, .lead")];
+const headings = [
+  ...document.querySelectorAll("h1, .lead, label.col-form-label"),
+];
 const searchBar = document.querySelector(".js-search-bar");
 const searchForm = document.querySelector(".js-search-form");
 const footerLinks = [...document.querySelectorAll(".js-links-container a")];
