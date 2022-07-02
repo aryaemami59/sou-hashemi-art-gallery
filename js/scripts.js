@@ -6,6 +6,8 @@ const modalImage = modalContent?.querySelector("img");
 const logo = document.querySelector(".logo");
 const paragraphs = [...document.querySelectorAll(".lead")];
 const headings = [...document.querySelectorAll("h1")];
+const searchBar = document.querySelector(".js-search-bar");
+const searchForm = document.querySelector(".js-search-form");
 const watercolorCarouselDiv = document.querySelector(
   ".watercolor-carousel-div"
 );
@@ -32,6 +34,14 @@ darkModeButton.addEventListener("click", () => {
   });
 });
 
+searchBar.addEventListener("input", e => {
+  const inputValue = e.target.value;
+  // console.log(inputValue);
+});
+
+searchForm.addEventListener("submit", () => {
+  console.log("submit");
+});
 // const r = new FileReader();
 // r.readAsText(blob);
 // const imgArray = [];
