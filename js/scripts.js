@@ -3,8 +3,7 @@ const topNavBar = document.querySelector(".js-navbar");
 const modalContent = document.querySelector(".modal-content");
 const modalImage = modalContent?.querySelector("img");
 const logo = document.querySelector(".logo");
-const paragraphs = [...document.querySelectorAll(".lead")];
-const headings = [...document.querySelectorAll("h1")];
+const headings = [...document.querySelectorAll("h1, .lead")];
 const searchBar = document.querySelector(".js-search-bar");
 const searchForm = document.querySelector(".js-search-form");
 const footerLinks = [...document.querySelectorAll(".js-links-container a")];
@@ -14,9 +13,6 @@ darkModeButton.addEventListener("click", () => {
   topNavBar.classList.toggle("navbar-light");
   topNavBar.classList.toggle("navbar-dark");
   logo.classList.toggle("dark-mode");
-  paragraphs.forEach(e => {
-    e.classList.toggle("text-white");
-  });
   headings.forEach(e => {
     e.classList.toggle("text-white");
   });
