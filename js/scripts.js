@@ -1,7 +1,5 @@
 const darkModeButton = document.querySelector(".js-dark-mode");
 const topNavBar = document.querySelector(".js-navbar");
-const modalContent = document.querySelector(".modal-content");
-const modalImage = modalContent?.querySelector("img");
 const logo = document.querySelector(".logo");
 const headings = [
   ...document.querySelectorAll("h1, .lead, label.col-form-label"),
