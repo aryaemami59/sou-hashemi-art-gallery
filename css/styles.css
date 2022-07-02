@@ -16,7 +16,7 @@ html {
 
 body {
   width: 100%;
-  height: 200%;
+  height: 100%;
   /* background: #0f2027; */
   /* background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027); */
   /* background: var(--dark-mode-color); */
@@ -89,4 +89,30 @@ body.dark-mode {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.site-footer {
+  /* background: red; */
+}
+
+.custom-btn {
+  /* background: var(--light-mode-color); */
+  /* background: linear-gradient(to bottom, #ece9e6, #ffffff, #ece9e6); */
+  /* background: var(--dark-mode-color); */
+  background-color: coral;
+  border: 6px outset rgba(255, 255, 255, 0.45);
+}
+
+.custom-btn:active {
+  border-style: inset;
+}
+
+.custom-btn:hover {
+  /* background: var(--dark-mode-color); */
+  /* background: var(--light-mode-color); */
+  /* color: black; */
+  /* background-color: darkcyan; */
+  background-color: rgba(0, 184, 249, 0.7);
+  /* box-shadow: 0 5px 15px 0 rgb(0 184 249 / 30%); */
+  /* text-shadow: white 0 0 5px; */
 }
