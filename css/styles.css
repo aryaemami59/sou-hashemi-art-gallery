@@ -92,3 +92,7 @@ textarea#message {
 textarea.custom-border-radius {
   border-radius: 2rem;
 }
+
+div.container.custom-max-width {
+  max-width: 1200px;
+}
