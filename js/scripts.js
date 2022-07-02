@@ -8,6 +8,7 @@ const paragraphs = [...document.querySelectorAll(".lead")];
 const headings = [...document.querySelectorAll("h1")];
 const searchBar = document.querySelector(".js-search-bar");
 const searchForm = document.querySelector(".js-search-form");
+const footerLinks = [...document.querySelectorAll(".js-links-container a")];
 const watercolorCarouselDiv = document.querySelector(
   ".watercolor-carousel-div"
 );
@@ -32,16 +33,19 @@ darkModeButton.addEventListener("click", () => {
   headings.forEach(e => {
     e.classList.toggle("text-white");
   });
+  footerLinks.forEach(e => {
+    e.classList.toggle("text-black-50");
+    e.classList.toggle("text-white-50");
+  });
 });
 
-searchBar.addEventListener("input", e => {
-  const inputValue = e.target.value;
-  // console.log(inputValue);
-});
+// searchBar.addEventListener("input", e => {
+//   const inputValue = e.target.value;
+// });
 
-searchForm.addEventListener("submit", () => {
-  console.log("submit");
-});
+// searchForm.addEventListener("submit", () => {
+//   console.log("submit");
+// });
 // const r = new FileReader();
 // r.readAsText(blob);
 // const imgArray = [];
