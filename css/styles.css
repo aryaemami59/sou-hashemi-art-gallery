@@ -84,3 +84,11 @@ a.custom-underline:hover:after {
 a.custom-underline.dark-mode::after {
   background-color: rgb(255, 255, 255, 0.5);
 }
+
+textarea#message {
+  height: 250px;
+}
+
+textarea.custom-border-radius {
+  border-radius: 2rem;
+}

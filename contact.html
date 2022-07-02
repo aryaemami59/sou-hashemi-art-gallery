@@ -108,58 +108,43 @@
     </nav>
     <div class="container px-3 py-5">
       <div class="row my-5 justify-content-center">
-        <div class="col-md-8">
-          <h1 class="mb-4">Contact</h1>
+        <div class="col-10 col-md-8 col-lg-6 text-center">
+          <h1 class="ps-2 mb-4 text-start">Contact</h1>
           <form>
-            <div class="mb-3 row">
-              <label for="fullName" class="col-form-label col-md-2">
-                Full Name
-              </label>
-              <div class="col-md-10">
+            <div class="input-group-lg">
+              <div class="form-floating">
                 <input
                   type="text"
-                  class="form-control shadow"
+                  class="form-control shadow rounded-pill ps-4 my-3"
                   id="fullName"
                   placeholder="Full Name"
                 />
+                <label for="fullName" class="ps-4">Full Name</label>
               </div>
-            </div>
-            <div class="mb-3 row">
-              <label for="email" class="col-form-label col-md-2">
-                Email Address
-              </label>
-              <div class="col-md-10">
+              <div class="form-floating">
                 <input
-                  type="text"
-                  class="form-control shadow"
+                  type="email"
+                  class="form-control shadow rounded-pill ps-4 my-3"
                   id="email"
                   placeholder="Email Address"
                 />
+                <label for="email" class="ps-4">Email Address</label>
               </div>
-            </div>
-            <div class="mb-3 row">
-              <label for="message" class="col-form-label col-md-2">
-                Message
-              </label>
-              <div class="col-md-10">
+              <div class="form-floating">
                 <textarea
                   name="message"
                   id="message"
-                  rows="10"
-                  class="form-control shadow"
+                  class="form-control ps-4 custom-border-radius shadow my-3"
                   placeholder="Message"
                 ></textarea>
+                <label for="message" class="ps-4">Message</label>
               </div>
-            </div>
-            <div class="mb-3 row">
-              <div class="col-md-10 offset-md-2">
-                <button
-                  type="button"
-                  class="btn rounded-pill fw-bold px-4 shadow text-white custom-btn"
-                >
-                  Send Message
-                </button>
-              </div>
+              <button
+                type="button"
+                class="btn rounded-pill fw-bold px-4 shadow text-white custom-btn"
+              >
+                Send Message
+              </button>
             </div>
           </form>
         </div>
