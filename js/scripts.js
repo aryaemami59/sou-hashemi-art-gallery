@@ -5,6 +5,7 @@ const headings = [
   ...document.querySelectorAll("h1, .lead, label.col-form-label"),
 ];
 const footerLinks = [...document.querySelectorAll(".js-links-container a")];
+const underlineLinks = [...document.querySelectorAll("a.custom-underline")];
 darkModeButton.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
   darkModeButton.classList.toggle("text-dark");
@@ -17,5 +18,8 @@ darkModeButton.addEventListener("click", () => {
   footerLinks.forEach(e => {
     e.classList.toggle("text-black-50");
     e.classList.toggle("text-white-50");
+  });
+  underlineLinks.forEach(e => {
+    e.classList.toggle("dark-mode");
   });
 });
