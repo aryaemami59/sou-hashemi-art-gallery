@@ -1,9 +1,7 @@
 const darkModeButton = document.querySelector(".js-dark-mode");
 const topNavBar = document.querySelector(".js-navbar");
 const logo = document.querySelector(".logo");
-const headings = [
-  ...document.querySelectorAll("h1, .lead, label.col-form-label"),
-];
+const headings = [...document.querySelectorAll("h1, p, label.col-form-label")];
 const footerLinks = [...document.querySelectorAll(".js-links-container a")];
 const underlineLinks = [...document.querySelectorAll("a.custom-underline")];
 darkModeButton.addEventListener("click", () => {
