@@ -4,7 +4,8 @@ const logo = document.querySelector(".logo");
 const headings = [...document.querySelectorAll("h1, p, label.col-form-label")];
 const footerLinks = [...document.querySelectorAll(".js-links-container a")];
 const underlineLinks = [...document.querySelectorAll("a.custom-underline")];
-darkModeButton.addEventListener("click", () => {
+localStorage.getItem("dark-mode") && darkModeButtonEventHandler();
+function darkModeButtonEventHandler() {
   document.body.classList.toggle("dark-mode");
   darkModeButton.classList.toggle("text-dark");
   topNavBar.classList.toggle("navbar-light");
@@ -20,4 +21,8 @@ darkModeButton.addEventListener("click", () => {
   underlineLinks.forEach(e => {
     e.classList.toggle("dark-mode");
   });
-});
+  document.body.classList.contains("dark-mode")
+    ? localStorage.setItem("dark-mode", true)
+    : localStorage.removeItem("dark-mode");
+}
+darkModeButton.addEventListener("click", darkModeButtonEventHandler);
